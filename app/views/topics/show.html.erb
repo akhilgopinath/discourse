@@ -4,7 +4,7 @@
 
 <% @breadcrumbs = categories_breadcrumb(@topic_view.topic)
     if @breadcrumbs.present? %>
-<div id='breadcrumbs'>
+<div id='breadcrumbs' class='openup-breadcrumbs'>
   <% @breadcrumbs.each_with_index do |c,i| %>
     <div id="breadcrumb-<%=i%>" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"
       <%-if (i+1) < @breadcrumbs.length%>
